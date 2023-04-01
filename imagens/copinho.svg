@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   style="isolation:isolate"
+   viewBox="0 0 566.92913 850.3937"
+   width="200mm"
+   height="300mm"
+   version="1.1"
+   id="svg224"
+   sodipodi:docname="copinho.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview226"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.35299097"
+     inkscape:cx="1162.9193"
+     inkscape:cy="492.93046"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg224" />
+  <defs
+     id="defs183">
+    <clipPath
+       id="_clipPath_3NmZNkrFGGgvGBvnQX7qIAYGA8oY5KT4">
+      <rect
+         width="1772"
+         height="400"
+         id="rect180"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#_clipPath_3NmZNkrFGGgvGBvnQX7qIAYGA8oY5KT4)"
+     id="g222"
+     transform="matrix(3.74685,0,0,3.74685,-2862.9221,11.91475)">
+    <g
+       id="g220">
+      <mask
+         id="_mask_iUGJRf6uNZUedWoJJTzCfYNIi4uJSk0y">
+        <path
+           d="M 792.305,84.431 H 877.66 L 868.015,196 h -64.137 z"
+           fill="#ffffff"
+           stroke="none"
+           id="path185" />
+      </mask>
+      <path
+         d="M 792.305,84.431 H 877.66 L 868.015,196 h -64.137 z"
+         fill="none"
+         id="path188" />
+      <path
+         d="M 792.305,84.431 H 877.66 L 868.015,196 h -64.137 z"
+         fill="none"
+         mask="url(#_mask_iUGJRf6uNZUedWoJJTzCfYNIi4uJSk0y)"
+         vector-effect="non-scaling-stroke"
+         stroke-width="4"
+         stroke="#000000"
+         stroke-linejoin="miter"
+         stroke-linecap="square"
+         stroke-miterlimit="3"
+         id="path190" />
+      <mask
+         id="_mask_lGaTLhD3DMJqrgkYbF52h4OGpTpEAJkM">
+        <path
+           d="M 871.873,21.967 868.592,15 l -29.936,23.687 -18.864,146.3 h 9.432 L 848.498,41.938 Z"
+           fill="#ffffff"
+           stroke="none"
+           id="path192" />
+      </mask>
+      <path
+         d="M 871.873,21.967 868.592,15 l -29.936,23.687 -18.864,146.3 h 9.432 L 848.498,41.938 Z"
+         fill="#c392e3"
+         id="path195" />
+      <path
+         d="M 871.873,21.967 868.592,15 l -29.936,23.687 -18.864,146.3 h 9.432 L 848.498,41.938 Z"
+         fill="#c392e3"
+         mask="url(#_mask_lGaTLhD3DMJqrgkYbF52h4OGpTpEAJkM)"
+         vector-effect="non-scaling-stroke"
+         stroke-width="6"
+         stroke="#000000"
+         stroke-linejoin="miter"
+         stroke-linecap="square"
+         stroke-miterlimit="3"
+         id="path197" />
+      <mask
+         id="_mask_xN8YQiGd9IIlApa20nYGu3w3YJBzhEA8">
+        <path
+           d="m 787,73.418 v 11.013 h 95 V 73.418 h -6.751 l -3.858,-11.492 h -74.746 l -2.411,11.492 z"
+           fill="#ffffff"
+           stroke="none"
+           id="path199" />
+      </mask>
+      <path
+         d="m 787,73.418 v 11.013 h 95 V 73.418 h -6.751 l -3.858,-11.492 h -74.746 l -2.411,11.492 z"
+         fill="#bcdec7"
+         id="path202" />
+      <path
+         d="m 787,73.418 v 11.013 h 95 V 73.418 h -6.751 l -3.858,-11.492 h -74.746 l -2.411,11.492 z"
+         fill="#bcdec7"
+         mask="url(#_mask_xN8YQiGd9IIlApa20nYGu3w3YJBzhEA8)"
+         vector-effect="non-scaling-stroke"
+         stroke-width="4"
+         stroke="#000000"
+         stroke-linejoin="miter"
+         stroke-linecap="square"
+         stroke-miterlimit="3"
+         id="path204" />
+      <mask
+         id="_mask_EFTdHKRNdL0NKrsqAQNOoHPj6bLnWnkj">
+        <path
+           d="m 795.68,73.418 c -7.187,1.03 66.366,2.342 78.604,0 -38.364,0.3 -78.408,-0.464 -78.604,0 z"
+           fill="#ffffff"
+           stroke="none"
+           id="path206" />
+      </mask>
+      <path
+         d="m 795.68,73.418 c -7.187,1.03 66.366,2.342 78.604,0 -38.364,0.3 -78.408,-0.464 -78.604,0 z"
+         fill="none"
+         id="path209" />
+      <path
+         d="m 795.68,73.418 c -7.187,1.03 66.366,2.342 78.604,0 -38.364,0.3 -78.408,-0.464 -78.604,0 z"
+         fill="none"
+         mask="url(#_mask_EFTdHKRNdL0NKrsqAQNOoHPj6bLnWnkj)"
+         vector-effect="non-scaling-stroke"
+         stroke-width="10"
+         stroke="#000000"
+         stroke-linejoin="miter"
+         stroke-linecap="square"
+         stroke-miterlimit="3"
+         id="path211" />
+      <mask
+         id="_mask_zJIYaStQ6iUpABO40DgzfVfHolSv7xIJ">
+        <path
+           d="m 809.183,187.86 54.01,0.957 4.822,-39.743 c -4.219,-1.915 -20.736,7.781 -27.005,9.577 -8.318,-3.591 -16.35,-12.245 -26.04,-13.886 -3.858,0.359 -7.234,7.9 -11.092,11.013 z"
+           fill="#ffffff"
+           stroke="none"
+           id="path213" />
+      </mask>
+      <path
+         d="m 809.183,187.86 54.01,0.957 4.822,-39.743 c -4.219,-1.915 -20.736,7.781 -27.005,9.577 -8.318,-3.591 -16.35,-12.245 -26.04,-13.886 -3.858,0.359 -7.234,7.9 -11.092,11.013 z"
+         fill="#f4d6e9"
+         id="path216" />
+      <path
+         d="m 809.183,187.86 54.01,0.957 4.822,-39.743 c -4.219,-1.915 -20.736,7.781 -27.005,9.577 -8.318,-3.591 -16.35,-12.245 -26.04,-13.886 -3.858,0.359 -7.234,7.9 -11.092,11.013 z"
+         fill="#f4d6e9"
+         mask="url(#_mask_zJIYaStQ6iUpABO40DgzfVfHolSv7xIJ)"
+         vector-effect="non-scaling-stroke"
+         stroke-width="3"
+         stroke="#000000"
+         stroke-linejoin="miter"
+         stroke-linecap="square"
+         stroke-miterlimit="3"
+         id="path218" />
+    </g>
+  </g>
+</svg>

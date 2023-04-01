@@ -1,0 +1,117 @@
+body {
+    background-color: #C9FDD7;
+}
+
+.table {
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 1600px;
+    display: grid;
+    background: #6892D5;
+    color: #79D1C3;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.row {
+    display: block;
+}
+
+.cell {
+    display: inline-block;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    background-color: #F8FCFB;
+    color: #79D1C3;
+    font-size: 10pt;
+    border-radius: 5px;
+    /* height: 100px; */
+    text-align: center;
+}
+
+.cellCabeca {
+    text-align: center !important;
+}
+
+.cod-produto {
+    width: 100px;
+}
+
+.nome {
+    width: 250px;
+}
+
+.email {
+    width: 200px;
+}
+
+.descricao {
+    width: 200px;
+}
+
+.preco {
+    width: 60px;
+}
+
+.quantidade {
+    width: 100px;
+}
+
+.opcoes {
+    width: 150px;
+}
+
+.cod-visual {
+    width: 100px;
+}
+
+.custo {
+    width: 60px;
+}
+
+.margem-lucro {
+    width: 110px;
+}
+
+.icms {
+    width: 100px;
+}
+
+.imagem {
+    width: 100px;
+}
+
+.excluido {
+    width: 70px;
+}
+
+.data-exclusao {
+    width: 120px;
+}
+
+.cab {
+    background: #6892D5;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+.opcoes a,
+.opcoes a:link,
+.opcoes a:visited {
+    color: #6892D5;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #79D1C3;
+    padding: 2px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.opcoes a:hover {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}

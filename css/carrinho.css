@@ -1,0 +1,41 @@
+.table {
+    width: 800px;
+    display: grid;
+}
+
+.row {
+    display: block;
+}
+
+.cell {
+    display: inline-block;
+    padding: 5px 5px;
+    margin-bottom: .5%;
+    background-color: rgb(177, 255, 168);
+    font-size: 10pt;
+}
+
+.cellHeader {
+    text-align: center !important;
+}
+
+.cellCodigo {
+    width: 100px;
+}
+
+.cellDescricao {
+    width: 300px;
+}
+
+.cellPrecoHeader {
+    width: 100px;
+}
+
+.cellPreco {
+    width: 60px;
+    text-align: right;
+}
+
+.cellAcoes {
+    width: 100px;
+}

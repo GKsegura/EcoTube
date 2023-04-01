@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500px"
+   height="500px"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview130"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.60310746"
+     inkscape:cx="397.10999"
+     inkscape:cy="164.14985"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs125">
+    <clipPath
+       id="_clipPath_ERXyNALpI7Ux7kuNog3Br5Ym7A0iIEcI">
+      <rect
+         width="1772"
+         height="400"
+         id="rect2"
+         x="0"
+         y="0" />
+    </clipPath>
+    <mask
+       id="_mask_Odwa6aL0Gf5kSHv67uxhcEabYqip9OCV">
+      <path
+         d="m 511,149 88,-1 c -0.447,-45.586 -18.437,-70.242 -54,-74 -40.87,2.276 -61.193,26.953 -61,74 4.335,38.001 23.345,58.546 57,61.605 24.322,1.422 42.332,-7.103 54,-25.605 l -7,-15 c -16.49,14.701 -32.146,20.378 -47,17 -17.938,-3.076 -27.928,-15.399 -30,-37 z"
+         fill="#ffffff"
+         stroke="none"
+         id="path7" />
+    </mask>
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       clip-path="url(#_clipPath_ERXyNALpI7Ux7kuNog3Br5Ym7A0iIEcI)"
+       id="g18"
+       style="isolation:isolate"
+       transform="matrix(3.6663082,0,0,3.6663082,-1734.1217,-268.95933)">
+      <mask
+         id="mask118">
+        <path
+           d="m 511,149 88,-1 c -0.447,-45.586 -18.437,-70.242 -54,-74 -40.87,2.276 -61.193,26.953 -61,74 4.335,38.001 23.345,58.546 57,61.605 24.322,1.422 42.332,-7.103 54,-25.605 l -7,-15 c -16.49,14.701 -32.146,20.378 -47,17 -17.938,-3.076 -27.928,-15.399 -30,-37 z"
+           fill="#ffffff"
+           stroke="none"
+           id="path116" />
+      </mask>
+      <path
+         d="m 511,149 88,-1 c -0.447,-45.586 -18.437,-70.242 -54,-74 -40.87,2.276 -61.193,26.953 -61,74 4.335,38.001 23.345,58.546 57,61.605 24.322,1.422 42.332,-7.103 54,-25.605 l -7,-15 c -16.49,14.701 -32.146,20.378 -47,17 -17.938,-3.076 -27.928,-15.399 -30,-37 z"
+         fill="#395113"
+         id="path10" />
+      <path
+         d="m 511,149 88,-1 c -0.447,-45.586 -18.437,-70.242 -54,-74 -40.87,2.276 -61.193,26.953 -61,74 4.335,38.001 23.345,58.546 57,61.605 24.322,1.422 42.332,-7.103 54,-25.605 l -7,-15 c -16.49,14.701 -32.146,20.378 -47,17 -17.938,-3.076 -27.928,-15.399 -30,-37 z"
+         fill="#395113"
+         mask="url(#_mask_Odwa6aL0Gf5kSHv67uxhcEabYqip9OCV)"
+         vector-effect="non-scaling-stroke"
+         stroke-width="2"
+         stroke="#395113"
+         stroke-linejoin="miter"
+         stroke-linecap="square"
+         stroke-miterlimit="3"
+         id="path12" />
+      <path
+         d="m 575.268,128.079 c 3.438,-2.563 11.125,-5.313 8,-14 -11.187,-12.588 -35.51,-17.911 -73,-16 8.992,6.74 15.335,14.75 19,24 5.057,8.206 9.733,13.216 14,15 8.497,4.438 16.841,5.114 25,2 2.167,-0.75 3.844,-3.74 5,-9 z"
+         fill="#97d097"
+         id="path14" />
+      <path
+         d="m 540.374,110.079 c 1.166,-0.376 2.202,-0.366 3.079,0 l 31.815,18 -2.052,2 -30.79,-18 -4.105,10 -2.053,-1 z"
+         fill="#395113"
+         id="path16" />
+    </g>
+  </g>
+</svg>

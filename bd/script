@@ -1,0 +1,65 @@
+DROP TABLE IF EXISTS produtos;
+CREATE TABLE produtos(
+cod_produto BIGSERIAL NOT NULL PRIMARY KEY,
+nome VARCHAR(40) NOT NULL,
+descricao VARCHAR(40) NOT NULL,
+preco NUMERIC(10, 2) NOT NULL,
+quantidade INT4 NOT NULL,
+codigovisual VARCHAR(50),
+custo NUMERIC(10, 2),
+margem_lucro NUMERIC(10, 2),
+icms NUMERIC(10, 2),
+campo_imagem VARCHAR(500),
+excluido BOOLEAN NOT NULL DEFAULT false,
+data_exclusao TIMESTAMP,
+reto BOOLEAN NOT NULL
+fino BOOLEAN NOT NULL,
+colorido BOOLEAN NOT NULL
+);
+
+DROP TABLE IF EXISTS users;
+CREATE TABLE users(
+cod_usuario BIGSERIAL NOT NULL PRIMARY KEY,
+nome VARCHAR(40) NOT NULL,
+email VARCHAR(40) NOT NULL,
+senha VARCHAR(50) NOT NULL,
+telefone char(15) NOT NULL,
+cpf char(14) NOT NULL,
+excluido BOOLEAN DEFAULT false,
+administrador BOOLEAN DEFAULT false
+);
+
+DROP TABLE IF EXISTS carrinho;
+CREATE TABLE carrinho (
+cod_carrinho bigserial NOT NULL PRIMARY KEY,
+cod_usuario BIGINT NOT NULL,
+cod_produto BIGINT NOT NULL,
+qtde INT,
+constraint fk_carrinho_cod_produto foreign key (cod_produto)
+references produtos (cod_produto),
+constraint fk_carrinho_cod_usuario foreign key (cod_usuario)
+references users (cod_usuario)
+);
+
+DROP TABLE IF EXISTS venda;
+CREATE TABLE venda(
+cod_venda bigserial NOT NULL PRIMARY KEY,
+cod_usuario BIGINT NOT NULL,
+datahoravenda TIMESTAMP NOT NULL,
+constraint fk_venda_cod_usuario foreign key (cod_usuario)
+references users (cod_usuario)
+);
+
+DROP TABLE IF EXISTS itensvenda;
+CREATE TABLE itensvenda(
+cod_itensvenda BIGSERIAL NOT NULL,
+cod_produto BIGINT NOT NULL,
+cod_venda BIGINT,
+qtde INT4 NOT NULL,
+valorunitario numeric(10,2) NOT NULL,
+valortotal numeric(10,2) NOT NULL,
+constraint fk_itensvenda_cod_produto foreign key (cod_produto)
+references produtos (cod_produto),
+constraint fk_itensvenda_cod_venda foreign key (cod_venda)
+references venda (cod_venda)
+);
