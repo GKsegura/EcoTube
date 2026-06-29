@@ -22,11 +22,11 @@
             <a class="fixo" href="index.php">Home</a>&nbsp;
             <?php
                 if (isset($_SESSION['isadm']) && $_SESSION['isadm'] == 't'){
-                    echo "<a class='fixo' href='./cadastros/cad_pesq_produtos_front.php''>Tab. Produtos</a>&nbsp;";
-                    echo "<a class='fixo' href='./cadastros/cad_pesq_usuarios_front.php''>Tab. Usuários</a>&nbsp;";
+                    echo "<a class='fixo' href='./cadastros/produtos.php'>Tab. Produtos</a>&nbsp;";
+                    echo "<a class='fixo' href='./cadastros/usuarios.php'>Tab. Usuários</a>&nbsp;";
                 }
                 else{
-                    echo "<a class='fixo' href='./venda/selecao_produtos_front.php'>Produtos</a>&nbsp;";
+                    echo "<a class='fixo' href='./venda/selecao.php'>Produtos</a>&nbsp;";
                     echo "<a class='fixo' href='devs.php'>Devs</a>&nbsp;";
                     echo "<a class='fixo' href='estatisticas.php'>Estatísticas</a>&nbsp;";
                 }
@@ -40,11 +40,11 @@
                     echo "<a class='fixo' href='./login/logoff_back.php' title='Sair'><i class='fa-solid fa-right-from-bracket'></i></a>";
                 }
                 else{
-                    echo "<a class='fixo' href='./login/login_front.php' title='Login'><i
+                    echo "<a class='fixo' href='./login/login.php' title='Login'><i
                     class='fa-solid fa-user'></i></a>&nbsp;";
                 }
             ?>
-            <a class="fixo" href="./venda/carrinho_front.php" title="Carrinho" id="iconcarrinho"><i
+            <a class="fixo" href="./venda/carrinho.php" title="Carrinho" id="iconcarrinho"><i
                     class="fa-solid fa-cart-shopping"></i></a>&nbsp;
         </div>
     </header>
@@ -82,7 +82,20 @@
             </div>
         </div>
 
-        <script src="utils/script.js"></script>
+        <script>
+        (function() {
+            var count = 1;
+            document.getElementById('radio1').checked = true;
+            setInterval(function() {
+                count = count >= 4 ? 1 : count + 1;
+                document.getElementById('radio' + count).checked = true;
+            }, 5000);
+            window.function1 = function() { count = 1; };
+            window.function2 = function() { count = 2; };
+            window.function3 = function() { count = 3; };
+            window.function4 = function() { count = 4; };
+        })();
+        </script>
 
         <div class="texto-grande">
             <p> A Ecotube é uma empresa de segmento de canudos de vidro. Com o objetivo de incentivar
@@ -142,7 +155,7 @@
                         ambiente!
                     </p>
                 </div><br>
-                <a class="btn-comprar" href="./venda/selecao_produtos_front.php">Comprar</a>
+                <a class="btn-comprar" href="./venda/selecao.php">Comprar</a>
             </div>
             <div class="divprod">
                 <img class="img-media" src="imagens/canudoreto.jpg">
@@ -152,7 +165,7 @@
                         diverte!
                     </p>
                 </div><br>
-                <a class="btn-comprar" href="./venda/selecao_produtos_front.php">Comprar</a>
+                <a class="btn-comprar" href="./venda/selecao.php">Comprar</a>
             </div>
             <div class="divprod">
                 <img class="img-media" src="imagens/kitcanudo.jpg">
@@ -161,7 +174,7 @@
                     <p>Monte seu kit de canudos de vidro retos e curvos para a família toda, e para diversas bebidas.
                     </p>
                 </div><br>
-                <a class="btn-comprar" href="./venda/selecao_produtos_front.php">Comprar</a>
+                <a class="btn-comprar" href="./venda/selecao.php">Comprar</a>
             </div>
         </div>
 

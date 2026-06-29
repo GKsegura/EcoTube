@@ -22,11 +22,11 @@
             <a class="fixo" href="index.php">Home</a>&nbsp;
             <?php
                 if (isset($_SESSION['isadm']) && $_SESSION['isadm'] == 't'){
-                    echo "<a class='fixo' href='./cadastros/cad_pesq_produtos_front.php''>Tab. Produtos</a>&nbsp;";
-                    echo "<a class='fixo' href='./cadastros/cad_pesq_usuarios_front.php''>Tab. Usuários</a>&nbsp;";
+                    echo "<a class='fixo' href='./cadastros/produtos.php'>Tab. Produtos</a>&nbsp;";
+                    echo "<a class='fixo' href='./cadastros/usuarios.php'>Tab. Usuários</a>&nbsp;";
                 }
                 else{
-                    echo "<a class='fixo' href='./venda/selecao_produtos_front.php'>Produtos</a>&nbsp;";
+                    echo "<a class='fixo' href='./venda/selecao.php'>Produtos</a>&nbsp;";
                     echo "<a class='fixo' href='devs.php'>Devs</a>&nbsp;";
                     echo "<a class='fixo' href='estatisticas.php'>Estatísticas</a>&nbsp;";
                 }
@@ -40,11 +40,11 @@
                     echo "<a class='fixo' href='./login/logoff_back.php' title='Sair'><i class='fa-solid fa-right-from-bracket'></i></a>";
                 }
                 else{
-                    echo "<a class='fixo' href='./login/login_front.php' title='Login'><i
+                    echo "<a class='fixo' href='./login/login.php' title='Login'><i
                     class='fa-solid fa-user'></i></a>&nbsp;";
                 }
             ?>
-            <a class="fixo" href="./venda/carrinho_front.php" title="Carrinho" id="iconcarrinho"><i
+            <a class="fixo" href="./venda/carrinho.php" title="Carrinho" id="iconcarrinho"><i
                     class="fa-solid fa-cart-shopping"></i></a>&nbsp;
         </div>
     </header>
