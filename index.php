@@ -149,42 +149,38 @@
         <div class="divsprods">
             <div class="divprod">
                 <img class="img-media" src="imagens/canudocurvo.jpg">
-                <br><br>
                 <div class="divtext">
                     <p>O canudo de vidro curvado é o ideal para tomar drinks, assim você se refresca e ajuda o meio
-                        ambiente!
-                    </p>
-                </div><br>
+                        ambiente!</p>
+                </div>
                 <a class="btn-comprar" href="./venda/selecao.php">Comprar</a>
             </div>
             <div class="divprod">
                 <img class="img-media" src="imagens/canudoreto.jpg">
-                <br><br>
                 <div class="divtext">
                     <p>Leve seu canudo de vidro reto ao cinema, e tome seu refrigerante enquanto ajuda o planeta e se
-                        diverte!
-                    </p>
-                </div><br>
+                        diverte!</p>
+                </div>
                 <a class="btn-comprar" href="./venda/selecao.php">Comprar</a>
             </div>
             <div class="divprod">
                 <img class="img-media" src="imagens/kitcanudo.jpg">
-                <br><br>
                 <div class="divtext">
-                    <p>Monte seu kit de canudos de vidro retos e curvos para a família toda, e para diversas bebidas.
-                    </p>
-                </div><br>
+                    <p>Monte seu kit de canudos de vidro retos e curvos para a família toda, e para diversas bebidas.</p>
+                </div>
                 <a class="btn-comprar" href="./venda/selecao.php">Comprar</a>
             </div>
         </div>
 
         <div class="local-video">
             <div class="video">
-                <iframe width="900" height="500" src="https://www.youtube.com/embed/vVNGUAqTOgw"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/vVNGUAqTOgw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
             <div class="local-videotxt">
                 <div class="texto-video">
@@ -206,7 +202,7 @@
 
         <footer>
             <div class="divfooter">
-                <p><b>DESENVOLVEDORES</b></p><br>
+                <p><b>DESENVOLVEDORES</b></p>
                 <p>N°02 - Andreia Ribeiro dos Santos</p>
                 <p>N°06 - Bianca Fayad Mainini</p>
                 <p>N°16 - Gabriele de Lima</p>
@@ -214,8 +210,8 @@
                 <p>N°23 - Julia Rodrigues Iozzi</p>
             </div>
             <div class="divfooter">
-                <p><b>PATROCÍNIOS</b></p><br><br>
-                <a href=" https://www.canu.do" target="_blank">
+                <p><b>PATROCÍNIOS</b></p>
+                <a href="https://www.canu.do" target="_blank">
                     <img class="footer-img"
                         src="https://images.tcdn.com.br/img/img_prod/754793/1641989868_canudo_logo_web.jpg">
                 </a>
