@@ -186,7 +186,7 @@
                 <div class="texto-video">
                     <p>Apresentamos no vídeo ao lado, uma ilustração e demonstração de nossos canudos. Ressaltando sua
                         importância e seus materiais!
-                        <br><br>Procuramos melhorar a condição do nosso planeta e da experiência de beber líquidos com
+                        <br>Procuramos melhorar a condição do nosso planeta e da experiência de beber líquidos com
                         qualidade
                         e
                         conforto sem preocupações!

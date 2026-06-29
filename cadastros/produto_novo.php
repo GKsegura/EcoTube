@@ -92,7 +92,6 @@ include "header.php";
                     </div>
                     <center>
                         <input type="submit" value="Salva produto">
-                        <br><br>
                         <a class="btn_exclui" href="produtos.php">Voltar</a>
                     </center>
                 </div>

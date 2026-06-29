@@ -18,7 +18,7 @@ include "header.php";
     <div class="divmae">
         <?php if ($qtde == 0): ?>
             <div class='nao_encontrado'>
-                Nenhum produto encontrado!<br><br>
+                Nenhum produto encontrado!
                 <a class='btn-confirma' href='produto_novo.php'>+ Novo Produto</a>
             </div>
         <?php else: ?>

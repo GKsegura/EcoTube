@@ -20,18 +20,13 @@ include "header.php";
     <div class="divmae">
         <div class="selecao-box">
             <h1><?php echo h($linha['nome']); ?></h1>
-            <br>
-            <img src='<?php echo h($linha['campo_imagem']); ?>' class='img-detalhes'>
-            <br><br>
-            Descrição: <?php echo h($linha['descricao']); ?>
-            <br><br>
-            Quantidade em estoque: <?php echo h($linha['quantidade']); ?>
-            <br><br>
-            Preço: R$ <?php echo number_format($linha['preco'], 2, ',', '.'); ?>
-            <br><br>
+            <img src='<?php echo h($linha['campo_imagem']); ?>' class='img-detalhes' style="margin:16px 0;">
+            <p style="margin:8px 0;"><strong>Descrição:</strong> <?php echo h($linha['descricao']); ?></p>
+            <p style="margin:8px 0;"><strong>Estoque:</strong> <?php echo h($linha['quantidade']); ?> unidades</p>
+            <p style="margin:8px 0 20px;"><strong>Preço:</strong> R$ <?php echo number_format($linha['preco'], 2, ',', '.'); ?></p>
             <center>
                 <?php if ($linha['quantidade'] > 0): ?>
-                    <a class='btn_exclui' href='carrinho.php?acao=add&cod_produto=<?php echo intval($linha['cod_produto']); ?>'>Comprar</a>&nbsp;&nbsp;
+                    <a class='btn_exclui' href='carrinho.php?acao=add&cod_produto=<?php echo intval($linha['cod_produto']); ?>'>Comprar</a>
                 <?php endif; ?>
                 <a class="btn_exclui" href="selecao.php">Voltar</a>
             </center>

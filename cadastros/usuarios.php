@@ -19,7 +19,7 @@ include "header.php";
         <?php if ($qtde == 0): ?>
             <center>
             <div class='nao_encontrado'>
-                NENHUM USUÁRIO ENCONTRADO<br><br>
+                NENHUM USUÁRIO ENCONTRADO
                 <a href='usuario_novo.php'>+ Novo Usuário</a>
             </div>
             </center>

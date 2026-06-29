@@ -61,10 +61,8 @@ include "header.php";
             ?>
             <br><h3>Total: R$ <?php echo number_format($total, 2, ',', '.'); ?></h3>
 
-            <br><br>
             <div class="botoes">
                 <h3>Deseja confirmar?</h3>
-                <br>
                 <a class="btn-confirma" href="carrinho.php">Cancelar</a>
                 <a class="btn-confirma" href="finalizacao.php">Finalizar</a>
             </div>
