@@ -49,64 +49,16 @@
         </div>
     </header>
     <div class="divmae">
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" onclick="function1()" id="radio1">
-                <input type="radio" name="radio-btn" onclick="function2()" id="radio2">
-                <input type="radio" name="radio-btn" onclick="function3()" id="radio3">
-                <input type="radio" name="radio-btn" onclick="function4()" id="radio4">
-                <div class="slide first">
-                    <img src="imagens/slider/pag1.jpg" alt="Imagem 1">
-                </div>
-                <div class="slide">
-                    <img src="imagens/slider/pag2.png" alt="Imagem 2">
-                </div>
-                <div class="slide">
-                    <img src="imagens/slider/pag3.png" alt="Imagem 3">
-                </div>
-                <div class="slide">
-                    <img src="imagens/slider/pag4.png" alt="Imagem 4">
-                </div>
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>EcoTube</h1>
+                <p>Canudos de vidro reutilizáveis para um planeta mais limpo.
+                   Nascida de uma reinterpretação dos famosos canudos de metal,
+                   a Ecotube une sustentabilidade, economia e qualidade.</p>
+                <a class="hero-btn" href="./venda/selecao.php">Ver Produtos</a>
             </div>
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-        </div>
-
-        <script>
-        (function() {
-            var count = 1;
-            document.getElementById('radio1').checked = true;
-            setInterval(function() {
-                count = count >= 4 ? 1 : count + 1;
-                document.getElementById('radio' + count).checked = true;
-            }, 5000);
-            window.function1 = function() { count = 1; };
-            window.function2 = function() { count = 2; };
-            window.function3 = function() { count = 3; };
-            window.function4 = function() { count = 4; };
-        })();
-        </script>
-
-        <div class="texto-grande">
-            <p> A Ecotube é uma empresa de segmento de canudos de vidro. Com o objetivo de incentivar
-                a utilização de produtos
-                reutilizáveis e econômicos. Nascida de uma reinterpretação dos famosos canudos de metal, juntamente
-                com
-                a
-                escova
-                de higienização, assim são os produtos da Ecotube!
-            </p>
-        </div>
+        </section>
 
         <div class="grid">
             <div class="col1">
