@@ -26,19 +26,23 @@
 }
 
 [data-theme="dark"] {
-  --azul: #6a9bd8;
-  --azul-escuro: #1e293b;
-  --verde-claro: #5cc4b4;
-  --verde-fundo: #0f172a;
-  --branco: #1e293b;
-  --azul-claro: #334155;
-  --texto: #e2e8f0;
-  --texto-leve: #94a3b8;
-  --card-bg: #1e293b;
-  --card-border: #334155;
-  --input-bg: #334155;
-  --sombra: 0 4px 20px rgba(0,0,0,0.3);
-  --sombra-hover: 0 8px 30px rgba(0,0,0,0.4);
+  --azul: #5e85c9;
+  --azul-escuro: #2b3f63;
+  --verde-claro: #4fb8a8;
+  --verde-fundo: #141a26;
+  --azul-claro: #3c5a8a;
+  --texto: #d8dee9;
+  --texto-leve: #97a3b6;
+  --card-bg: #1c2433;
+  --card-border: #2e3850;
+  --input-bg: #242e42;
+  --sombra: 0 4px 20px rgba(0,0,0,0.35);
+  --sombra-hover: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.theme-transitioning,
+.theme-transitioning * {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease !important;
 }
 
 center {
@@ -122,7 +126,7 @@ center {
 
 .cabecalho {
   width: 100%;
-  background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+  background: #3d5f99;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -132,6 +136,28 @@ center {
   top: 0;
   z-index: 100;
 }
+
+.cabecalho::before,
+.cabecalho::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: opacity 0.35s ease;
+}
+
+.cabecalho::before {
+  background: linear-gradient(135deg, #3d5f99, #5a82c4);
+  opacity: 1;
+}
+
+.cabecalho::after {
+  background: linear-gradient(135deg, #2b3f63, #5e85c9);
+  opacity: 0;
+}
+
+[data-theme="dark"] .cabecalho::before { opacity: 0; }
+[data-theme="dark"] .cabecalho::after { opacity: 1; }
 
 .logo {
   height: 56px;
@@ -296,19 +322,27 @@ a.fixo {
   color: var(--texto-leve);
 }
 
-.col1 #img_grid {
-  padding: 16px;
-  padding-bottom: 20px;
-}
-
+.col1 #img_grid,
 .col1 #img_grid1 {
-  padding: 16px;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 20px;
+  padding: 14px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.35s ease;
 }
 
 .col1 #img_grid1 > img,
 .col1 #img_grid > img {
-  width: 72px;
-  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   transition: all 0.3s;
 }
 
