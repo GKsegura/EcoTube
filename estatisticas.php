@@ -4,6 +4,7 @@
 <?php
     session_start();
     include "./includes/helpers.php";
+    requireAdmin('index.php');
     include "./includes/parser_estatisticas.php";
 
     $caixa   = parseCaixa();

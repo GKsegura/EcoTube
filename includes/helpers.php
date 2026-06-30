@@ -4,9 +4,9 @@ function h($str) {
     return htmlspecialchars($str ?? '', ENT_QUOTES, 'UTF-8');
 }
 
-function requireAdmin() {
+function requireAdmin(string $redirectUrl = '../index.php') {
     if (!isset($_SESSION['isadm']) || $_SESSION['isadm'] !== 't') {
-        header("Location: ../index.php");
+        header("Location: $redirectUrl");
         exit;
     }
 }
