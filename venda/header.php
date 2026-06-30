@@ -10,47 +10,4 @@
 </head>
 
 <body class="corpo">
-    <?php include "../includes/theme_toggle.php"; ?>
-    <header class="cabecalho">
-        <div class="cableft">
-            <a class="logo" href="../index.php"><img class="logo" src="../imagens/logo.svg" alt="logo"></a>
-        </div>
-        <div class="cabcenter">
-            <a class="fixo" href="../index.php">Home</a>&nbsp;
-            <?php
-                if (isset($_SESSION['isadm']) && $_SESSION['isadm'] == 't'){
-                    echo "<a class='fixo' href='../cadastros/produtos.php'>Tab. Produtos</a>&nbsp;";
-                    echo "<a class='fixo' href='../cadastros/usuarios.php'>Tab. Usuários</a>&nbsp;";
-                }
-                else{
-                    echo "<a class='fixo' href='selecao.php'>Produtos</a>&nbsp;";
-                    echo "<a class='fixo' href='../devs.php'>Devs</a>&nbsp;";
-                    echo "<a class='fixo' href='../estatisticas.php'>Estatísticas</a>&nbsp;";
-                }
-            ?>
-        </div>
-        <div class="cabright">
-            <?php
-                if (isset($_SESSION['usuariologado']))
-                {
-                    echo "<p class='usuario_cab'>Olá, " . h($_SESSION['usuariologado']['nome']) . "</p>";
-                    echo "<a class='fixo' href='../login/logoff_back.php' title='Sair'><i class='fa-solid fa-right-from-bracket'></i></a>";
-                }
-                else{
-                    echo "<a class='fixo' href='../login/login.php' title='Login'><i
-                    class='fa-solid fa-user'></i></a>&nbsp;";
-                }
-            ?>
-            <a class="fixo" href="carrinho.php" title="Carrinho" id="iconcarrinho"><i
-                    class="fa-solid fa-cart-shopping"></i>
-                <?php if (isset($_SESSION['usuariologado'])): $qtdeCarrinho = contarItensCarrinho($_SESSION['usuariologado']['cod_usuario']); if ($qtdeCarrinho > 0): ?>
-                    <span class="badge-carrinho"><?php echo $qtdeCarrinho; ?></span>
-                <?php endif; endif; ?>
-            </a>&nbsp;
-            <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema">
-                <i class="fa-solid fa-moon icon-dark"></i>
-                <i class="fa-solid fa-sun icon-light"></i>
-            </button>
-        </div>
-    </header>
-    <?php renderToast(); ?>
+    <?php $base = '../'; include __DIR__ . '/../includes/header.php'; ?>

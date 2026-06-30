@@ -122,11 +122,11 @@ center {
 [data-theme="dark"] .theme-toggle .icon-dark { display: none; }
 [data-theme="dark"] .theme-toggle .icon-light { display: inline; }
 
-#iconcarrinho {
+.cart-icon {
   position: relative;
 }
 
-.badge-carrinho {
+.cart-badge {
   position: absolute;
   top: -6px;
   right: -2px;
@@ -147,7 +147,7 @@ center {
 
 /* ===== HEADER / NAV ===== */
 
-.cabecalho {
+.site-header {
   width: 100%;
   background: #3d5f99;
   display: flex;
@@ -160,8 +160,8 @@ center {
   z-index: 100;
 }
 
-.cabecalho::before,
-.cabecalho::after {
+.site-header::before,
+.site-header::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -169,30 +169,30 @@ center {
   transition: opacity 0.35s ease;
 }
 
-.cabecalho::before {
+.site-header::before {
   background: linear-gradient(135deg, #3d5f99, #5a82c4);
   opacity: 1;
 }
 
-.cabecalho::after {
+.site-header::after {
   background: linear-gradient(135deg, #2b3f63, #5e85c9);
   opacity: 0;
 }
 
-[data-theme="dark"] .cabecalho::before { opacity: 0; }
-[data-theme="dark"] .cabecalho::after { opacity: 1; }
+[data-theme="dark"] .site-header::before { opacity: 0; }
+[data-theme="dark"] .site-header::after { opacity: 1; }
 
 .logo {
   height: 56px;
 }
 
-.cableft {
+.header-left {
   width: 15%;
   display: flex;
   align-items: center;
 }
 
-.cabcenter {
+.header-nav {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -200,7 +200,7 @@ center {
   gap: 4px;
 }
 
-.cabright {
+.header-actions {
   width: 20%;
   display: flex;
   justify-content: flex-end;
@@ -208,8 +208,8 @@ center {
   gap: 6px;
 }
 
-a.fixo:link,
-a.fixo:visited {
+a.nav-link:link,
+a.nav-link:visited {
   padding: 8px 14px;
   font-size: 13px;
   font-weight: 600;
@@ -220,16 +220,16 @@ a.fixo:visited {
   transition: all 0.25s;
 }
 
-a.fixo:hover {
+a.nav-link:hover {
   color: #fff;
   background: rgba(255,255,255,0.12);
 }
 
-a.fixo {
+a.nav-link {
   transition: all 0.25s;
 }
 
-.usuario_cab {
+.user-greeting {
   padding: 5px 8px;
   font-size: 13px;
   text-decoration: none;
@@ -525,7 +525,7 @@ a.fixo {
 
 /* ===== FOOTER ===== */
 
-footer {
+.site-footer {
   display: flex;
   background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
   width: 100%;
@@ -533,13 +533,13 @@ footer {
   gap: 24px;
 }
 
-footer p {
+.site-footer p {
   color: rgba(255,255,255,0.7);
   font-size: 14px;
   line-height: 1.9;
 }
 
-footer p b {
+.site-footer p b {
   display: block;
   font-size: 13px;
   letter-spacing: 2px;
@@ -548,36 +548,36 @@ footer p b {
   margin-bottom: 8px;
 }
 
-.divfooter {
+.footer-col {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.divfooter:first-child {
+.footer-col:first-child {
   flex: 1.2;
 }
 
-.btn-footer {
+.footer-top-btn {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   width: auto;
 }
 
-.btn-footer a.fixo {
+.footer-top-btn a.nav-link {
   background: rgba(255,255,255,0.1);
   padding: 12px 14px;
   border-radius: 50%;
   transition: all 0.3s;
 }
 
-.btn-footer a.fixo:hover {
+.footer-top-btn a.nav-link:hover {
   background: rgba(255,255,255,0.25);
   transform: translateY(-3px);
 }
 
-.footer-img {
+.footer-sponsor-img {
   margin-top: 12px;
   width: 160px;
   height: auto;
@@ -586,7 +586,7 @@ footer p b {
   transition: opacity 0.3s;
 }
 
-.footer-img:hover {
+.footer-sponsor-img:hover {
   opacity: 1;
 }
 
@@ -1414,13 +1414,13 @@ span {
     font-size: 15px;
   }
 
-  .cabecalho {
+  .site-header {
     flex-wrap: wrap;
     padding: 10px 3%;
     gap: 6px;
   }
 
-  .cableft {
+  .header-left {
     width: auto;
   }
 
@@ -1428,20 +1428,20 @@ span {
     height: 44px;
   }
 
-  .cabcenter {
+  .header-nav {
     order: 3;
     width: 100%;
     flex-wrap: wrap;
     gap: 2px;
   }
 
-  .cabright {
+  .header-actions {
     width: auto;
     margin-left: auto;
   }
 
-  a.fixo:link,
-  a.fixo:visited {
+  a.nav-link:link,
+  a.nav-link:visited {
     font-size: 12px;
     padding: 4px 8px;
   }
@@ -1480,17 +1480,17 @@ span {
     padding: 24px;
   }
 
-  footer {
+  .site-footer {
     flex-direction: column;
     padding: 32px 5%;
     gap: 24px;
   }
 
-  .divfooter {
+  .footer-col {
     width: 100%;
   }
 
-  .btn-footer {
+  .footer-top-btn {
     width: 100%;
     justify-content: center;
   }
@@ -1579,7 +1579,7 @@ span {
     font-size: 13px;
   }
 
-  .cabecalho {
+  .site-header {
     padding: 8px 3%;
   }
 
@@ -1587,8 +1587,8 @@ span {
     height: 36px;
   }
 
-  a.fixo:link,
-  a.fixo:visited {
+  a.nav-link:link,
+  a.nav-link:visited {
     font-size: 11px;
     padding: 3px 6px;
   }

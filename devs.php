@@ -15,49 +15,7 @@
 </head>
 
 <body class="corpo">
-    <?php include "./includes/theme_toggle.php"; ?>
-    <header class="cabecalho">
-        <div class="cableft">
-            <a class="logo" href="index.php"><img class="logo" src="imagens/logo.svg" alt="logo"></a>
-        </div>
-        <div class="cabcenter">
-            <a class="fixo" href="index.php">Home</a>&nbsp;
-            <?php
-                if (isset($_SESSION['isadm']) && $_SESSION['isadm'] == 't'){
-                    echo "<a class='fixo' href='./cadastros/produtos.php'>Tab. Produtos</a>&nbsp;";
-                    echo "<a class='fixo' href='./cadastros/usuarios.php'>Tab. Usuários</a>&nbsp;";
-                }
-                else{
-                    echo "<a class='fixo' href='./venda/selecao.php'>Produtos</a>&nbsp;";
-                    echo "<a class='fixo' href='devs.php'>Devs</a>&nbsp;";
-                    echo "<a class='fixo' href='estatisticas.php'>Estatísticas</a>&nbsp;";
-                }
-            ?>
-        </div>
-        <div class="cabright">
-            <?php 
-                if (isset($_SESSION['usuariologado']))
-                {
-                    echo "<p class='usuario_cab'>Olá, ".$_SESSION['usuariologado']['nome']."</p>";
-                    echo "<a class='fixo' href='./login/logoff_back.php' title='Sair'><i class='fa-solid fa-right-from-bracket'></i></a>";
-                }
-                else{
-                    echo "<a class='fixo' href='./login/login.php' title='Login'><i
-                    class='fa-solid fa-user'></i></a>&nbsp;";
-                }
-            ?>
-            <a class="fixo" href="./venda/carrinho.php" title="Carrinho" id="iconcarrinho"><i
-                    class="fa-solid fa-cart-shopping"></i>
-                <?php if (isset($_SESSION['usuariologado'])): $qtdeCarrinho = contarItensCarrinho($_SESSION['usuariologado']['cod_usuario']); if ($qtdeCarrinho > 0): ?>
-                    <span class="badge-carrinho"><?php echo $qtdeCarrinho; ?></span>
-                <?php endif; endif; ?>
-            </a>&nbsp;
-            <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema">
-                <i class="fa-solid fa-moon icon-dark"></i>
-                <i class="fa-solid fa-sun icon-light"></i>
-            </button>
-        </div>
-    </header>
+    <?php $base = ''; include "./includes/header.php"; ?>
     <div class="divmae">
 
         <div class="todos-devs">
@@ -116,29 +74,7 @@
 
 
 
-
-
-
-        <footer>
-            <div class="divfooter">
-                <p><b>DESENVOLVEDORES</b></p>
-                <p>N°02 - Andreia Ribeiro dos Santos</p>
-                <p>N°06 - Bianca Fayad Mainini</p>
-                <p>N°16 - Gabriele de Lima</p>
-                <p>N°22 - José Antonio Segura Marques da Silva</p>
-                <p>N°23 - Julia Rodrigues Iozzi</p>
-            </div>
-            <div class="divfooter">
-                <p><b>PATROCÍNIOS</b></p>
-                <a href="https://www.canu.do" target="_blank">
-                    <img class="footer-img"
-                        src="https://images.tcdn.com.br/img/img_prod/754793/1641989868_canudo_logo_web.jpg">
-                </a>
-            </div>
-            <div class="btn-footer">
-                <a class="fixo" href="#" title="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
-            </div>
-        </footer>
+        <?php include "./includes/footer.php"; ?>
     </div>
 </body>
 
