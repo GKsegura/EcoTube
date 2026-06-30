@@ -122,6 +122,29 @@ center {
 [data-theme="dark"] .theme-toggle .icon-dark { display: none; }
 [data-theme="dark"] .theme-toggle .icon-light { display: inline; }
 
+#iconcarrinho {
+  position: relative;
+}
+
+.badge-carrinho {
+  position: absolute;
+  top: -6px;
+  right: -2px;
+  background: var(--verde-claro);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.25);
+}
+
 /* ===== HEADER / NAV ===== */
 
 .cabecalho {
@@ -1274,20 +1297,86 @@ h3 {
 
 /* ===== ESTATÍSTICAS ===== */
 
-.estatist {
-  width: 100%;
-  min-height: 80vh;
+.estat-kpis {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  gap: 24px;
+  padding: 40px 4% 0;
 }
 
-.estat {
-  height: 75vh;
-  margin: 0 3%;
-  width: 40%;
+.kpi-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: var(--radius);
+  box-shadow: var(--sombra);
+  padding: 24px 32px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kpi-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--sombra-hover);
+}
+
+.kpi-valor {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--azul);
+}
+
+.kpi-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--texto-leve);
+}
+
+.estat-graficos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px 4%;
+}
+
+.grafico-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+  padding: 24px;
+  flex: 1 1 440px;
+  max-width: 600px;
+}
+
+.grafico-card h3 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--texto);
+}
+
+.estat-link-original {
+  text-align: center;
+  font-size: 13px;
+  color: var(--texto-leve);
+  padding-bottom: 32px;
+}
+
+.estat-link-original a {
+  color: var(--texto-leve);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.estat-link-original a:hover {
+  color: var(--azul);
 }
 
 /* ===== ESGOTADO ===== */
@@ -1454,14 +1543,19 @@ span {
     margin-left: 0;
   }
 
-  .estatist {
+  .estat-graficos {
     flex-direction: column;
+    align-items: center;
   }
 
-  .estat {
-    width: 90%;
-    height: 50vh;
-    margin: 10px 0;
+  .grafico-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .kpi-card {
+    min-width: 150px;
+    padding: 20px;
   }
 }
 

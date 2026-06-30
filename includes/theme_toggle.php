@@ -15,6 +15,8 @@ function toggleTheme() {
         localStorage.setItem('theme', 'dark');
     }
 
+    window.dispatchEvent(new CustomEvent('ecotube:themechange'));
+
     setTimeout(function() {
         document.body.classList.remove('theme-transitioning');
     }, 400);
