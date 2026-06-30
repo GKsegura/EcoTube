@@ -3,6 +3,7 @@
 
 <?php
     session_start();
+    include "./includes/helpers.php";
 ?>
 
 <head>
@@ -46,7 +47,11 @@
                 }
             ?>
             <a class="fixo" href="./venda/carrinho.php" title="Carrinho" id="iconcarrinho"><i
-                    class="fa-solid fa-cart-shopping"></i></a>&nbsp;
+                    class="fa-solid fa-cart-shopping"></i>
+                <?php if (isset($_SESSION['usuariologado'])): $qtdeCarrinho = contarItensCarrinho($_SESSION['usuariologado']['cod_usuario']); if ($qtdeCarrinho > 0): ?>
+                    <span class="badge-carrinho"><?php echo $qtdeCarrinho; ?></span>
+                <?php endif; endif; ?>
+            </a>&nbsp;
             <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema">
                 <i class="fa-solid fa-moon icon-dark"></i>
                 <i class="fa-solid fa-sun icon-light"></i>

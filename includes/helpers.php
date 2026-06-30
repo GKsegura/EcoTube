@@ -25,6 +25,14 @@ function redirect($msg, $url) {
     exit;
 }
 
+function contarItensCarrinho(int $cod_usuario): int {
+    include __DIR__ . '/conexao.php';
+    $sql = "SELECT COALESCE(SUM(qtde), 0) AS total FROM carrinho WHERE cod_usuario = $1";
+    $res = pg_query_params($conecta, $sql, [$cod_usuario]);
+    $row = pg_fetch_assoc($res);
+    return intval($row['total']);
+}
+
 function renderToast() {
     if (!isset($_SESSION['toast'])) return;
     $toast = $_SESSION['toast'];
