@@ -23,14 +23,13 @@ foreach ($resultado_lista as $linha) {
 
     if ($linha['qtde'] > $produto['quantidade'] || $produto['quantidade'] <= 0) {
         $erro = true;
-        echo "<script>alert('Não possuímos a quantidade desejada de " . addslashes($produto['nome']) . " em estoque! Máximo: " . intval($produto['quantidade']) . " unidades.')</script>";
+        $msg_erro = 'Não possuímos a quantidade desejada de ' . $produto['nome'] . ' em estoque! Máximo: ' . intval($produto['quantidade']) . ' unidades.';
     }
 }
 
 if ($erro) {
     pg_close($conecta);
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=carrinho.php'>";
-    exit;
+    redirect($msg_erro, 'carrinho.php');
 }
 
 $sql = "INSERT INTO venda(cod_usuario, datahoravenda) VALUES($1, current_timestamp);";

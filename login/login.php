@@ -67,6 +67,7 @@ if (isset($_SESSION['usuariologado'])) {
 </head>
 
 <body class="corpo">
+    <?php include "../includes/theme_toggle.php"; ?>
     <header class="cabecalho">
         <div class="cableft">
             <a class="logo" href="../index.php"><img class="logo" src="../imagens/logo.svg" alt="logo"></a>
@@ -99,8 +100,13 @@ if (isset($_SESSION['usuariologado'])) {
             ?>
             <a class="fixo" href="../venda/carrinho.php" title="Carrinho" id="iconcarrinho"><i
                     class="fa-solid fa-cart-shopping"></i></a>&nbsp;
+            <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema">
+                <i class="fa-solid fa-moon icon-dark"></i>
+                <i class="fa-solid fa-sun icon-light"></i>
+            </button>
         </div>
     </header>
+    <?php renderToast(); ?>
     <div class="divmae">
         <div class="box-login">
             <h2>Login</h2>

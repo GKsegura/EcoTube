@@ -9,9 +9,5 @@ $stringdeconexao = "host=localhost
 $conecta = pg_connect($stringdeconexao);
 
 if (!$conecta) {
-    echo '<script language="javascript">';
-    echo "alert('Não foi possível estabelecer conexão com o banco de dados!')";
-    echo '</script>';
-
-    exit;
+    die('Erro: não foi possível conectar ao banco de dados.');
 }
