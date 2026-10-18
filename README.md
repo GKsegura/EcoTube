@@ -24,3 +24,7 @@ Sistema de e-commerce desenvolvido em PHP com banco de dados relacional, cobrind
 ## Contexto
 
 Projeto do segundo ano do ensino técnico de informática — Colégio Técnico Industrial "Prof. Isaac Portal Roldán" (UNESP).
+
+## 📊 Linguagens
+
+![Linguagens](https://raw.githubusercontent.com/GKsegura/GKsegura/main/cards/EcoTube.svg)
